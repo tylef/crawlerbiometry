@@ -4,7 +4,7 @@ var Crawler = require("simplecrawler");
 /* Configuration Crawler */
 var crawler = Crawler.crawl("http://crawler.esy.es/");
 crawler.maxDepth = 3;
-crawler.filterByDomain = false;
+crawler.filterByDomain = false; // We want explore all Internet 
 crawler.interval = 500;
 
 var conditionID = crawler.addFetchCondition(function(parsedURL) {
