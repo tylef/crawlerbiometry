@@ -1,7 +1,6 @@
 var http = require('http');
 var Crawler = require("simplecrawler");
 
-
 /* Configuration Crawler */
 var crawler = Crawler.crawl("http://crawler.esy.es/");
 crawler.maxDepth = 3;
